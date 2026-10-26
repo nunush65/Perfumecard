@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+        color: #faebd7;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-[#f2ebe3]"
+  >
+    <main
+      class="mx-5 flex max-w-[700px] flex-col overflow-hidden rounded-xl bg-white md:h-[500px] md:flex-row"
+    >
+      <!-- Product image -->
+      <div class="w-full md:w-1/2">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+            class="h-full w-full object-cover"
+          />
+        </picture>
+      </div>
+
+      <!-- Product details -->
+      <div class="w-full p-8 md:w-1/2 md:p-10">
+        <p class="tracking-[0.4em] text-gray-500">PERFUME</p>
+
+        <h1 class="my-6 text-3xl font-bold leading-tight">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+
+        <p class="leading-6 text-gray-500">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <div class="my-6 flex items-center gap-4">
+          <span class="text-4xl font-bold text-emerald-700">$149.99</span>
+          <del class="text-gray-500">$169.99</del>
+        </div>
+
+        <button
+          type="button"
+          class="w-full rounded-lg bg-emerald-700 py-4 text-white"
+        >
+          🛒 Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <footer class="attribution mt-4">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">nunush</a>.
+    </footer>
+  </body>
+</html>
